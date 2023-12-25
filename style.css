@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(#200016, #10001f);
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.title {
+  text-transform: capitalize;
+  font-family: system-ui;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul li {
+  margin: 15px;
+}
+nav a {
+  padding: 5px 10px;
+  font-family: system-ui;
+  font-weight: bold;
+  transition: all 1s;
+}
+nav a:hover,
+.activ {
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+}
+header {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+header::after {
+  content: "";
+  background: linear-gradient(to top, #200016, transparent);
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+}
+header img {
+  width: 100%;
+  position: absolute;
+  height: 100vh;
+  object-fit: cover;
+}
+#moon2 {
+  mix-blend-mode: screen;
+  transform: translateY(50px);
+}
+header .hussein {
+  font-family: system-ui;
+  color: #fff;
+  text-transform: capitalize;
+  transform: translateY(-130px);
+  font-size: 13px;
+}
+.Content {
+  padding: 20px;
+  margin: 20px;
+  color: #fff;
+}
+.Content h2 {
+  margin: 30px;
+}
+.Content p {
+  margin: 20px;
+}
+@media screen and (max-width: 425px) {
+  nav ul li {
+    margin: 2px;
+  }
+  nav a {
+    padding: 5px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  nav a {
+    font-size: 12px;
+  }
+  nav {
+    padding: 15px 2px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .title {
+    font-size: 16px;
+  }
+}
